@@ -31,9 +31,20 @@
     .full-hero li {
       display: inline;
     }
+    .social-list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .social-list > li {
+      display: inline-block;
+    }
     /* BIO STYLES */
     .bio-wrapper {
-      font-size: 25px;
+      font-size: 24px;
+      margin: 0 auto 30px;
+      max-width: 960px;
+      overflow: hidden;
     }
     .bio-wrapper:after {
       visibility: hidden;
@@ -45,11 +56,15 @@
     }
     .bio-box {
     border: 1px solid black;
-    font-size: 1em;
-    width: 25%;
-    padding: 2%;
-    float: left;
     box-sizing: border-box;
+    float: left;
+    font-size: 1em;
+    margin: 40px 1% 0;
+    padding: 2%; 
+    width: 19%;
+    }
+    .bio-box > a {
+      color: #c68bf9;
     }
     .bio-box h3 {
     font-size: 1.5em;
@@ -66,15 +81,15 @@
   <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
 
-    <ul>
+    <ul class="social-list">
       <li>
-        <a href="https://example.com" class="social-link">Link</a>
+        <a href="https://example.com" class="social-link">Link1</a>
       </li>
       <li>
-        <a href="https://example.com" class="social-link">Link</a>
+        <a href="https://example.com" class="social-link">Link2</a>
       </li>
       <li>
-        <a href="https://example.com" class="social-link">Link</a>
+        <a href="https://example.com" class="social-link">Link3</a>
       </li>
     </ul>
   </div>
