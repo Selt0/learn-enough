@@ -1,6 +1,55 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a img {
+  border: none;
+}
+/* END RESET*/
+
 /* GLOBAL STYLES */
-a {
-color: #f00;
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
 }
 body {
   font-family: helvetica, arial, sans;
@@ -9,18 +58,24 @@ h1 {
   font-size: 7vw;
   margin-top: 0;
 }
-html {
-  box-shadow: 0 0 0 30px #000 inset;
-  padding: 0 30px;
+a {
+  color: #f00;
+}
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
 }
 
-/*HEADER STYLERS*/
+/* HEADER STYLES */
 .header {
   background-color: #000;
   color: #fff;
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 20;
 }
 .header-logo {
   background-color: #000;
@@ -54,13 +109,15 @@ html {
 }
 .header-nav a {
   color: #fff;
+}
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
-.header-nav a:hover,
-.header-nav a:active {
+.nav-links a:hover,
+.nav-links a:active  {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a {
@@ -70,41 +127,59 @@ html {
   color: #fff;
 }
 
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
-  position: relative;
 }
 
 /* SOCIAL STYLES */
-.social-link {
-background: rgba(150, 150, 150, 0.5);
-border-radius: 99px;
-box-sizing: border-box;
-color: #fff;
-display: inline-block;
-font-family: helvetica, arial, sans;
-font-size: 1rem;
-font-weight: bold;
-height: 2.5em;
-line-height: 1;
-padding-top: 0.85em;
-text-align: center;
-text-decoration: none;
-vertical-align: middle;
-width: 2.5em;
-}
-.social-link:hover,
-.social-link:active {
-  background: #222;
-}
 .social-list {
-  bottom: 0;
   list-style: none;
   padding: 0;
-  position: absolute;
-  text-align: left;
+  text-align: center;
+}
+.social-link {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2.5em;
+  line-height: 1;
+  padding-top: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 2.5em;
 }
 .social-list > li {
   display: inline-block;
@@ -141,9 +216,8 @@ width: 2.5em;
   margin: 2em 0 1em;
 }
 .bio-copy {
-font-size: 1em;
-line-height: 1.5;
+  font-size: 1em;
 }
 .bio-copy a {
-color: green;
+  color: green;
 }
