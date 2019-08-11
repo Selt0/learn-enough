@@ -1,3 +1,10 @@
+
+Skip to content
+Selt0 / selt0.github.io
+Code Issues 0 Pull requests 0 Projects 0 Wiki Security Pulse Community
+selt0.github.io/_site/css/main.css
+@Selt0 Selt0 Add hero section with image bc5b42f yesterday
+251 lines (245 sloc) 4.31 KB
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -102,16 +109,6 @@ h2 ~ p {
 .header-nav a {
   color: #fff;
 }
-.nav-links a {
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.nav-links a:hover,
-.nav-links a:active  {
-  color: #ed6e2f;
-}
 .header-nav > li {
   display: inline-block;
   margin-left: 1em;
@@ -125,6 +122,16 @@ h2 ~ p {
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active  {
+  color: #ed6e2f;
 }
 
 /* FOOTER STYLES */
@@ -158,10 +165,10 @@ h2 ~ p {
   background-size: cover;
   box-sizing: border-box;
   height: 100vh;
-  padding: 10vh;
+  padding-top: 10vh;
 }
 .hero-home {
-  background-image: url(/images//shark.jpg);
+  background-image: url(/images/shark.jpg);
   background-position: center top;
 }
 .hero-content {
@@ -170,7 +177,7 @@ h2 ~ p {
   text-align: center;
   text-transform: uppercase;
   top: 50%;
-  transform: translate(0, 50%);
+  transform: translate(0, -50%);
 }
 .hero-content h1 {
   color: rgba(255, 255, 255, 0.8);
