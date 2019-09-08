@@ -503,3 +503,10 @@ h2 ~ p {
   margin-top: 3em;
   padding-top: 2em;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
+}
