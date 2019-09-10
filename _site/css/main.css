@@ -234,7 +234,7 @@ h2 ~ p {
 }
 .footer .drop-menu {
   padding: 0 0 1em;
-  bottom: 0.75em;
+  bottom: 1em;
 }
 .footer .drop-menu:before {
   border-color: #fff transparent transparent;
