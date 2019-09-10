@@ -238,7 +238,7 @@ h2 ~ p {
 }
 .footer .drop-menu:before {
   border-color: #fff transparent transparent;
-  top: 9.6em;
+  top: 7em;
 }
 .footer .drop-menu li {
   display: block;
@@ -631,6 +631,9 @@ h2 ~ p {
   /* FOOTER STYLES */
   .footer .social-list {
     margin-top: 1em;
+  }
+  .footer .drop-menu:before {
+    top: 9.6em;
   }
 
   /* HOME STYLES */
