@@ -448,6 +448,7 @@ h2 ~ p {
   text-transform: uppercase;
 }
 .callout-copy {
+  box-sizing: border-box;
   flex: 0 0 45em;
   font-size: 0.8rem;
   padding: 0 3vw;
@@ -745,6 +746,12 @@ h2 ~ p {
   /* BLOG STYLES */
   .page .blog-cols {
     flex-direction: column-reverse;
+  }
+  .post-aside{
+    float: none;
+  }
+  .pull-left {
+    width: 100%;
   }
   .page h1 {
     margin-bottom: 0.25em;
