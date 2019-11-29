@@ -356,7 +356,7 @@ h2 ~ p {
   width: 0;
 }
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: url(/learn-enough/images/shark.jpg);
   background-position: center top;
 }
 .hero-content {
