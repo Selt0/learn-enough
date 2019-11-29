@@ -6,7 +6,6 @@ author: Tyler
 authorTwitter: https://twitter.com/mhartl
 gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
-permalink: /learn-enough/:year/:month/:date/:title/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium viverra suspendisse. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Volutpat odio facilisis mauris sit amet massa vitae tortor. Senectus et netus et malesuada fames ac turpis egestas. Posuere urna nec tincidunt praesent semper.
