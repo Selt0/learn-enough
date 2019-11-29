@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lorem Ipsum v2
-postHero: /images/large/slide1.jpg
+postHero: /learn-enough/images/large/slide1.jpg
 author: Dafidel
 authorTwitter: https://twitter.com/mhartl
 gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
