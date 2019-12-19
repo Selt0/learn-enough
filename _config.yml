@@ -43,7 +43,11 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
+<<<<<<< HEAD
 #baseurl             : "" # does not include hostname
+=======
+baseurl             : "/learn-enough" # does not include hostname
+>>>>>>> parent of 7ecefc2... Fix links
 show_dir_listing    : false
 
 # Outputting

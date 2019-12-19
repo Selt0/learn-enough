@@ -389,7 +389,7 @@ h2 ~ p {
 .social-list {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  text-align: center;
 }
 .social-link {
   background: rgba(150, 150, 150, 0.5);
