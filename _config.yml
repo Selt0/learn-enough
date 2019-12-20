@@ -46,7 +46,7 @@ baseurl             : /learn-enough # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : /learn-enough/blog/:year/:month/:day/:title
+permalink           : /blog/:year/:month/:day/:title
 paginate_path       : /page:num
 timezone            : null
 
