@@ -1,4 +1,5 @@
 # Where things are
+url                 : https://selt0.github.io/learn-enough/
 source              : .
 destination         : ./_site
 collections_dir     : .
