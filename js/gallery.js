@@ -4,14 +4,30 @@
   //set variable to hold img nested inside id: gallery-photo 
   let mainImage = document.querySelector('#gallery-photo img');
 
+
   thumbnails.forEach(function(thumbnail) {
+    //preload large images
+    let newImageSrc = thumbnail.dataset.largeVersion;
+    let largeVersion = new Image();
+    largeVersion.src = newImageSrc;
+
     thumbnail.addEventListener('click', function() {
-      //set variable to hold path src of file
-      let newImageSrc = thumbnail.dataset.largeVersion;
       //variable for alt
       let newImageAlt = thumbnail.dataset.description;
-      //set the src attribute to the current display image to the large version when clicked
-      mainImage.setAttribute('src', newImageSrc);
+      //change the src/alt attribute to the current display image 
+      mainImage.setAttribute('src', largeVersion.src);
       mainImage.setAttribute('alt', newImageAlt);
+
+      //change orange border to current img
+      document.querySelector('.current').classList.remove('current');
+      thumbnail.parentNode.classList.add('current');
+
+      //update image info
+      let galleryInfo = document.querySelector('#galler-info');
+      let title = galleryInfo.querySelector('.title');
+      let description = galleryInfo.querySelector('.description');
+
+      title.innerHTML = thumbnail.dataset.title;
+      description.innerHTML = thumbnail.dataset.description;
     });
   });
