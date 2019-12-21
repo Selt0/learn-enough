@@ -10,8 +10,12 @@
       let newImageSrc = thumbnail.dataset.largeVersion;
       //variable for alt
       let newImageAlt = thumbnail.dataset.description;
-      //set the src attribute to the current display image to the large version when clicked
+      //change the src/alt attribute to the current display image 
       mainImage.setAttribute('src', newImageSrc);
       mainImage.setAttribute('alt', newImageAlt);
+
+      //change orange border to current img
+      document.querySelector('.current').classList.remove('current');
+      thumbnail.parentNode.classList.add('current');
     });
   });
